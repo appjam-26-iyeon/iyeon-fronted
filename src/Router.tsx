@@ -4,6 +4,8 @@ import CalenderPage from "./pages/CalenderPage";
 import CoupleMatchingPage from "./pages/CoupleMatchingPage";
 import AuthenticationPage from "./pages/AuthenticationPage";
 import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SignupPage";
+import AuthenticationPage from "./pages/AuthenticationPage";
 
 function Router() {
     return(
@@ -14,6 +16,8 @@ function Router() {
                 <Route path="/CoupleMatching" element={<CoupleMatchingPage />} />
                 <Route path="/Authentication" element={<AuthenticationPage />} />
                 <Route path="/login" element={<LoginPage />} />
+                <Route path="/signup" element={<SignupPage />} />
+                <Route path="auth" element={<AuthenticationPage />} />
             </Routes>
         </BrowserRouter>
     )

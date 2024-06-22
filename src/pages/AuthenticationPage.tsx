@@ -1,8 +1,20 @@
 import styled from "styled-components";
 import { Leftarrow } from "../assets/indes";
 import "../Fonts/Font.css";
+import { useState } from "react";
+import AuthModal from "../modal/AuthModal";
 
 const AuthenticationPage = () => {
+    const [isAuthModalOpen, setIsAuthModalOpen] = useState<boolean>(false);
+
+  const handleOpenAuthModal = () => {
+    setIsAuthModalOpen(true);
+  };
+
+  const handleCloseAuthModal = () => {
+    setIsAuthModalOpen(false);
+  };
+
     return(
         <>
             <Leftarrowimg src={Leftarrow} />
@@ -22,7 +34,8 @@ const AuthenticationPage = () => {
 
             <Gap2 />
 
-            <AuthenticationNumberCreate>인증 코드 생성하기</AuthenticationNumberCreate>
+            <AuthenticationNumberCreate onClick={handleOpenAuthModal}>인증 코드 생성하기</AuthenticationNumberCreate>
+            <AuthModal isOpen={isAuthModalOpen} onClose={handleCloseAuthModal} />
 
             <Gap3 />
 
