@@ -5,7 +5,6 @@ import CoupleMatchingPage from "./pages/CoupleMatchingPage";
 import AuthenticationPage from "./pages/AuthenticationPage";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
-import AuthenticationPage from "./pages/AuthenticationPage";
 
 function Router() {
     return(
