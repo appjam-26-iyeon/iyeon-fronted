@@ -1,9 +1,12 @@
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
 
 function Router() {
     return(
         <BrowserRouter>
-            <Route></Route>
+            <Routes>
+                <Route path="/landing" element={<LandingPage />} />
+            </Routes>
         </BrowserRouter>
     )
 }
