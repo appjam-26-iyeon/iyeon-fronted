@@ -1,11 +1,13 @@
 import styled from "styled-components";
 import { BackBtn } from "../assets/indes";
+import { useNavigate } from "react-router-dom";
 
 const SignupPage = () => {
+    const navigate = useNavigate();
     return (
         <Container>
             <BackTextWrapper>
-                <BackButton src={BackBtn}></BackButton>돌아가기
+                <BackButton src={BackBtn} onClick={() => {navigate("/landing")}}></BackButton>돌아가기
             </BackTextWrapper>
             <SignupText>회원가입</SignupText>
             <InputWrapper>
@@ -38,6 +40,7 @@ const BackTextWrapper = styled.div`
     left: 0;
     z-index: 1000;
     padding: 7vw;
+    cursor: pointer;
 `
 
 const BackButton = styled.img`

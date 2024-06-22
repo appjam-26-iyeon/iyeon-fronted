@@ -1,11 +1,13 @@
 import styled from "styled-components";
 import { BackBtn } from "../assets/indes";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
+    const navigate = useNavigate()
     return (
         <Container>
             <BackTextWrapper>
-                <BackButton src={BackBtn}></BackButton>돌아가기
+                <BackButton src={BackBtn} onClick={() => {navigate("/landing")}}></BackButton>돌아가기
             </BackTextWrapper>
             <LoginText>로그인</LoginText>
             <InputWrapper>

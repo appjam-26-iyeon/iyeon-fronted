@@ -1,8 +1,10 @@
 import styled from "styled-components";
 import { Logo } from "../assets/indes";
 import "../Fonts/Font.css";
+import { useNavigate } from "react-router-dom";
 
 const LandingPage = () => {
+    const navigate = useNavigate()
     return (
         <>
             <Logopicture src={Logo} />
@@ -19,14 +21,14 @@ const LandingPage = () => {
             <Gap3 />
             <Footer>
                 <Buttons>
-                    <Loginbutton>로그인</Loginbutton>
+                    <Loginbutton onClick={() => {navigate("/login")}}>로그인</Loginbutton>
                 </Buttons>
                 <Firstbar>
                     <Bar />
                     <First>처음이라면?</First>
                     <Bar />
                 </Firstbar>
-                <Signin>회원가입</Signin>
+                <Signin onClick={() => {navigate("/signup")}}>회원가입</Signin>
             </Footer>
         </>
     )
