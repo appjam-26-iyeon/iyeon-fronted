@@ -2,6 +2,41 @@ import styled from "styled-components";
 import { Logo } from "../assets/indes";
 import "../Fonts/Font.css";
 
+const LandingPage = () => {
+    return (
+        <>
+        <Logopicture src={Logo} />
+        <Gap2 />
+        <Servicename>
+            <Leaderspan>커플 달력</Leaderspan>
+            <Memberspan> 너와 나</Memberspan>
+        </Servicename>
+
+        <Gap />
+        
+        <Description>
+            <Neighborspan>서로의 일정을 공유하고</Neighborspan>
+            <Neighborspan>추억을 쌓아보세요!</Neighborspan>
+        </Description>
+
+        <Gap3 />
+        <Footer>
+        <Buttons>
+            <Loginbutton>로그인</Loginbutton>
+        </Buttons>
+
+        <Firstbar>
+            <Bar />
+            <First>처음이라면?</First>
+            <Bar />
+        </Firstbar>
+
+            <Signin>회원가입</Signin>
+        </Footer>
+        </>
+    )
+}
+
 const Logopicture = styled.img`
     display: block;
     margin-left: auto;
@@ -107,43 +142,6 @@ const Footer = styled.div`
     justify-content: center;
     align-items: center;
 `
-
-
-
-const LandingPage = () => {
-    return (
-        <>
-        <Logopicture src={Logo} />
-        <Gap2 />
-        <Servicename>
-            <Leaderspan>커플 달력</Leaderspan>
-            <Memberspan> 너와 나</Memberspan>
-        </Servicename>
-
-        <Gap />
-        
-        <Description>
-            <Neighborspan>서로의 일정을 공유하고</Neighborspan>
-            <Neighborspan>추억을 쌓아보세요!</Neighborspan>
-        </Description>
-
-        <Gap3 />
-        <Footer>
-        <Buttons>
-            <Loginbutton>로그인</Loginbutton>
-        </Buttons>
-
-        <Firstbar>
-            <Bar />
-            <First>처음이라면?</First>
-            <Bar />
-        </Firstbar>
-
-            <Signin>회원가입</Signin>
-        </Footer>
-        </>
-    )
-}
 
 
 
