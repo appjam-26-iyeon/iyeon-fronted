@@ -1,21 +1,24 @@
 import styled from "styled-components";
 import { Logo } from "../assets/indes";
 import "../Fonts/Font.css";
+
 const Logopicture = styled.img`
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20vh;
+    margin-top: 15vh;
 `
 
 const Leaderspan = styled.span`
     font-family: KyoboHandwriting2023wsa;
     color: #FFC3C3;
+    font-size: 8vw;
 `
 
 const Memberspan = styled.span`
     font-family: KyoboHandwriting2023wsa;
     color: black;
+    font-size: 8vw;
 `
 
 const Servicename = styled.span`
@@ -42,8 +45,8 @@ const First = styled.span`
 
 const Bar = styled.div`
     background-color: #D9D9D9;
-    height: 2px;
-    width: 27vw;
+    height: 0.5px;
+    width: 32vw;
 `
 
 const Firstbar = styled.div`
@@ -52,7 +55,7 @@ const Firstbar = styled.div`
     align-items: center;
     gap: 10px;
     justify-content: center;
-
+    width: 90vw;
 `
 
 const Description = styled.div`
@@ -67,7 +70,11 @@ const Gap = styled.div`
 `
 
 const Gap2 = styled.div`
-    height: 250px;
+    height: 50px;
+`
+
+const Gap3 = styled.div`
+    height: 210px;
 `
 
 const Buttons = styled.div`
@@ -93,12 +100,21 @@ const Signin = styled.span`
     color: #FF9393;
 `
 
+const Footer = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+`
+
 
 
 const LandingPage = () => {
     return (
         <>
         <Logopicture src={Logo} />
+        <Gap2 />
         <Servicename>
             <Leaderspan>커플 달력</Leaderspan>
             <Memberspan> 너와 나</Memberspan>
@@ -111,13 +127,11 @@ const LandingPage = () => {
             <Neighborspan>추억을 쌓아보세요!</Neighborspan>
         </Description>
 
-        <Gap2 />
-
+        <Gap3 />
+        <Footer>
         <Buttons>
             <Loginbutton>로그인</Loginbutton>
         </Buttons>
-
-        <Gap />
 
         <Firstbar>
             <Bar />
@@ -125,8 +139,8 @@ const LandingPage = () => {
             <Bar />
         </Firstbar>
 
-        <Gap />
             <Signin>회원가입</Signin>
+        </Footer>
         </>
     )
 }
