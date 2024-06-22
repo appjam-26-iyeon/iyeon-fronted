@@ -62,7 +62,7 @@ const Getout = styled.span`
 const Titlecontainer = styled.div`
     display: flex;
     justify-content: left;
-    margin-left: -20px;
+    margin-left: 20px;
 `
 
 const Title = styled.span`
@@ -74,15 +74,15 @@ const Title = styled.span`
 const AuthenticationInputContainer = styled.div`
     display: flex;
     justify-content: left;
-    margin-left: -20px;
+    margin-left: 20px;
 
 `
 
 const AuthenticationNumber = styled.input`
+        padding-left: 20px;
     &::placeholder {
         color: #656565;
         font-weight: bold;
-        padding-left: 20px;
         align-items: center;
         vertical-align: center;
     }
@@ -90,7 +90,7 @@ const AuthenticationNumber = styled.input`
     background-color: #F2F2F4;
     border-radius: 10px;
     height: 7vh;
-    width: 100%;
+    width: 90%;
     border: none;
 `;
 
@@ -117,7 +117,7 @@ const Nextbutton = styled.button`
 `
 
 const Gap1 = styled.div`
-    height: 30px;
+    height: 50px;
 `
 
 const Gap2 = styled.div`
