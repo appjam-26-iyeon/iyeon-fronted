@@ -10,7 +10,7 @@ const LoginPage = () => {
             <LoginText>로그인</LoginText>
             <InputWrapper>
                 <Input placeholder="이메일"></Input>
-                <Input placeholder="비밀번호"></Input>
+                <Input placeholder="비밀번호" type="password"></Input>
             </InputWrapper>
             <LoginBtn>로그인</LoginBtn>
         </Container>
