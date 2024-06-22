@@ -12,7 +12,7 @@ const LoginPage = () => {
                 <Input placeholder="이메일"></Input>
                 <Input placeholder="비밀번호"></Input>
             </InputWrapper>
-
+            <LoginBtn>로그인</LoginBtn>
         </Container>
     )
 }
@@ -74,13 +74,26 @@ const Input = styled.input`
     align-items: center;
     margin-left: 3vw;
     gap: 36px;
+    font-family: Pretendard-extralight;
+    font-weight: 200;
+    font-size: 5vw;
 `
 
 const LoginBtn = styled.div`
     width: 312px;
     height: 55px;
-    text-align: center;
     border-radius: 10px;
+    cursor: pointer;
+    background-color: #FF9393;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45vh;
+    margin-left: 7vw;
+    font-family: Pretendard-regular;
+    font-family: 600;
+    font-size: 4vw;
 `
 
 export default LoginPage

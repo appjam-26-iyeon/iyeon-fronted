@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Logo } from "../assets/indes";
 import { Profile } from "../assets/indes";
 import React, { useState } from 'react';
-import Calendar, { CalendarProps, CalendarTileProperties } from 'react-calendar';
+import Calendar, { CalendarProps, CalenderTileProperties } from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import "../Fonts/Font.css";
 
